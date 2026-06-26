@@ -176,11 +176,11 @@
 
         .btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             text-align: center;
             flex: 1;
             transition: background-color 0.2s ease;
@@ -195,29 +195,27 @@
             background-color: var(--primary-hover);
         }
 
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--text-color);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .btn-secondary:hover {
-            background-color: rgba(255, 255, 255, 0.05);
-        }
-
         .contact-list {
             display: flex;
-            gap: 20px;
+            flex-direction: column;
+            gap: 15px;
             list-style: none;
         }
 
-        .contact-list a {
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a {
             color: var(--primary);
             text-decoration: none;
             font-weight: 600;
         }
 
-        .contact-list a:hover {
+        .contact-item a:hover {
             text-decoration: underline;
         }
 
@@ -238,6 +236,7 @@
 
     <div class="container">
         
+        <!-- قسم المهارات -->
         <section id="skills">
             <h2>المهارات التقنية</h2>
             <div class="skills-grid">
@@ -254,51 +253,52 @@
             </div>
         </section>
 
+        <!-- قسم المشاريع -->
         <section id="projects">
             <h2>معرض المشاريع</h2>
             <div class="projects-grid">
                 
+                <!-- مشروع نظام درجات الطلاب -->
                 <div class="project-card" style="border: 1px solid rgba(74, 222, 128, 0.3);">
-                    <div class="badge">جديد / نظام سحابي الكامل</div>
+                    <div class="badge">نظام سحابي</div>
                     <div class="project-info">
-                        <h3>نظام بوابة درجات الطلاب الإدارية</h3>
-                        <p>تطبيق ويب متكامل يربط بين إدارة الكنترول والطالب. يتيح للإدارة رفع الدرجات وتحديثها فورياً عبر لوحة تحكم مؤمنة، ويسمح للطلاب بالاستعلام الفوري عن نتائجهم بشكل متجاوب وسريع باستخدام Firebase Firestore.</p>
+                        <h3>نظام بوابة درجات الطلاب السحابي</h3>
+                        <p>تطبيق ويب يتيح للطلاب الاستعلام الفوري عن نتائج واختبارات أعمال السنة والميدترم والعملي بشكل متجاوب وسريع، متصل بقاعدة بيانات سحابية حية باستخدام Firebase Firestore.</p>
                         <div class="project-links">
-                            <a href="https://y47055550-ctrl.github.io/student-grades/" target="_blank" class="btn btn-primary" style="background-color: var(--accent);">بوابة الطالب 🔍</a>
-                            <a href="https://y47055550-ctrl.github.io/student-grades/admin.html" target="_blank" class="btn btn-secondary">لوحة التحكم ⚙️</a>
+                            <a href="https://y47055550-ctrl.github.io/student-grades/" target="_blank" class="btn btn-primary" style="background-color: var(--accent); font-weight: bold;">زيارة بوابة استعلام الطلاب 🔍</a>
                         </div>
                     </div>
                 </div>
                 
+                <!-- مشروع 1 -->
                 <div class="project-card">
                     <div class="project-info">
                         <h3>HEATWAVE</h3>
                         <p>موقع متكامل لشركة أنظمة تدفئة، مبرمج بنظام SPA للتنقل الفوري بدون تحميل الصفحة، مع نظام فلترة تفاعلي للمشاريع وتصميم مظلم فاخر.</p>
                         <div class="project-links">
-                            <a href="https://y47055550-ctrl.github.io/heatwave/" target="_blank" class="btn btn-primary">المعاينة الحية</a>
-                            <a href="https://github.com/y47055550-ctrl/heatwave" target="_blank" class="btn btn-secondary">الكود</a>
+                            <a href="https://y47055550-ctrl.github.io/heatwave/" target="_blank" class="btn btn-primary">المعاينة الحية 🌐</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- مشروع 2 -->
                 <div class="project-card">
                     <div class="project-info">
                         <h3>Landing Page 1</h3>
                         <p>صفحة هبوط تسويقية احترافية، متوافقة بالكامل مع الموبايل، مصممة لزيادة نسبة التحويل مع سرعة تحميل فائقة.</p>
                         <div class="project-links">
-                            <a href="https://y47055550-ctrl.github.io/landing-page1/" target="_blank" class="btn btn-primary">المعاينة الحية</a>
-                            <a href="https://github.com/y47055550-ctrl/landing-page1" target="_blank" class="btn btn-secondary">الكود</a>
+                            <a href="https://y47055550-ctrl.github.io/landing-page1/" target="_blank" class="btn btn-primary">المعاينة الحية 🌐</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- مشروع 3 -->
                 <div class="project-card">
                     <div class="project-info">
                         <h3>Landing Page 2</h3>
                         <p>صفحة هبوط عصرية وتفاعلية، تدعم مؤثرات بصرية ناعمة (CSS Animations) وتضم نموذج تواصل ذكي لجمع بيانات العملاء.</p>
                         <div class="project-links">
-                            <a href="https://y47055550-ctrl.github.io/landing-page2/" target="_blank" class="btn btn-primary">المعاينة الحية</a>
-                            <a href="https://github.com/y47055550-ctrl/landing-page2" target="_blank" class="btn btn-secondary">الكود</a>
+                            <a href="https://y47055550-ctrl.github.io/landing-page2/" target="_blank" class="btn btn-primary">المعاينة الحية 🌐</a>
                         </div>
                     </div>
                 </div>
@@ -306,11 +306,12 @@
             </div>
         </section>
 
+        <!-- قسم التواصل -->
         <section id="contact">
             <h2>تواصل معي</h2>
             <ul class="contact-list">
-                <li><a href="https://github.com/y47055550-ctrl" target="_blank">GitHub</a></li>
-                <li>تواصل معي عبر البريد الإلكتروني أو حسابات العمل الحر الخاصة بك هنا.</li>
+                <li class="contact-item">📁 <a href="https://github.com/y47055550-ctrl" target="_blank">حسابي على GitHub</a></li>
+                <li class="contact-item">📞 الهاتف / واتساب: <a href="https://wa.me/201141355416" target="_blank" style="color: var(--accent);">01141355416</a></li>
             </ul>
         </section>
 
